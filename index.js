@@ -1,5 +1,9 @@
 const Discord = require('discord.js-selfbot-v13');
 const request = require("request");
+const express = require("express");
+require("./uptime.js")();
+const app = express();
+const port = 3000;
 const fs = require('fs')
 require('dotenv').config()
 const client = new Discord.Client({
